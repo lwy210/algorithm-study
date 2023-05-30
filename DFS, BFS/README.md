@@ -1,5 +1,5 @@
-## 그래프 구현방법
-### 1. 인접 행렬로 구현하기
+# 그래프 구현방법
+## 1. 인접 행렬로 구현하기
 `인접 행렬` 
 - 2차원 배열로 그래프의 연결 관계를 표현하는 방식
 - 모든 관계를 저장하므로 메모리 이슈
@@ -24,7 +24,7 @@ print(graph)
 <br>
 <br>
 
-### 2. 인접 리스트로 구현하기
+## 2. 인접 리스트로 구현하기
 `인접 리스트` 
 - 리스트로 그래프의 연결 관계를 표현하는 방식
 - 메모리 공간 낭비가 비교적 적음
@@ -50,12 +50,25 @@ print(graph)
 ## 출력 결과 ##
 # [[(1, 7), (2, 5)], [(0, 7)], [(0, 5)]]
 ```
+<br>
+<br>
 
-# DFS (Depth-First Search)
+# 💚 DFS, BFS 차이 바로보기!!
+<p align="center"><img src="https://github.com/lwy210/algorithm-study/assets/33020581/bbdf1a41-ce06-4b1b-bac9-77c952ab72fa"></p>
+
+<br>
+<br>
+
+# 💙 DFS (Depth-First Search)
 - 깊이 우선 탐색이라고도 부른다.
 - 그래프에서 깊은 부분을 우선적으로 탐색하는 알고리즘이다.
 - 동작 원리 : **스택**
 - 구현 방법 : **재귀 함수 이용**
+
+
+<br>
+<p align="center"><img src="https://github.com/lwy210/algorithm-study/assets/33020581/11ab0f88-34fe-40c5-a0f7-ef4de11eecad"></p>
+<br>
 
 ```python
 # DFS 메서드 정의
@@ -94,12 +107,16 @@ dfs(graph, 1, visited)
 <br>
 <br>
 
-# BFS (Breadth-First Search)
+# 💛 BFS (Breadth-First Search)
 
 - 너비 우선 탐색이라고도 부른다.
 - 가까운 노드부터 탐색하는 알고리즘이다.
 - 동작원리 : **큐**
 - 구현방법 : **큐 자료구조 이용**
+
+<br>
+<p align="center"><img src="https://github.com/lwy210/algorithm-study/assets/33020581/18faf258-6cdb-4f19-b1c5-0b6cf304e7c0"></p>
+<br>
 
 ```python
 from collections import deque
@@ -143,3 +160,6 @@ bfs(graph, 1, visited)
 ## 출력 결과 ##
 # 1 2 3 8 7 4 5 6
 ```
+
+<br>
+<br>
